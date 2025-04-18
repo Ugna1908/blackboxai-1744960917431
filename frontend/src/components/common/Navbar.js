@@ -11,26 +11,32 @@ const Navbar = () => {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to="/" className="flex-shrink-0 flex items-center">
-              <span className="text-2xl font-bold text-primary-600">ResumeAI</span>
+              <span className="text-2xl font-bold text-indigo-900">ResumeAI</span>
             </Link>
             <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
               <Link
-                to="/"
-                className="text-gray-900 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium"
+                to="/analyze"
+                className="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Home
+                Analyze Resume
               </Link>
               <Link
-                to="/pricing"
-                className="text-gray-900 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium"
+                to="/analyze-linkedin"
+                className="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
               >
-                Pricing
+                Analyze LinkedIn
               </Link>
               <Link
                 to="/samples"
-                className="text-gray-900 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium"
+                className="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
               >
                 Samples
+              </Link>
+              <Link
+                to="/pricing"
+                className="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
+              >
+                Pricing
               </Link>
             </div>
           </div>
@@ -38,13 +44,13 @@ const Navbar = () => {
           <div className="hidden sm:ml-6 sm:flex sm:items-center sm:space-x-4">
             <Link
               to="/login"
-              className="text-gray-900 hover:text-primary-600 px-3 py-2 rounded-md text-sm font-medium"
+              className="text-gray-900 hover:text-indigo-600 px-3 py-2 rounded-md text-sm font-medium"
             >
               Login
             </Link>
             <Link
               to="/signup"
-              className="btn-primary"
+              className="inline-flex items-center px-4 py-2 border border-transparent text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700"
             >
               Get Started
             </Link>
@@ -54,7 +60,7 @@ const Navbar = () => {
           <div className="flex items-center sm:hidden">
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-primary-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             >
               <span className="sr-only">Open main menu</span>
               <i className={`fas ${isOpen ? 'fa-times' : 'fa-bars'}`}></i>
@@ -76,32 +82,38 @@ const Navbar = () => {
         <div className="sm:hidden">
           <div className="pt-2 pb-3 space-y-1">
             <Link
-              to="/"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-primary-600 hover:bg-gray-50"
+              to="/analyze"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-gray-50"
             >
-              Home
+              Analyze Resume
             </Link>
             <Link
-              to="/pricing"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-primary-600 hover:bg-gray-50"
+              to="/analyze-linkedin"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-gray-50"
             >
-              Pricing
+              Analyze LinkedIn
             </Link>
             <Link
               to="/samples"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-primary-600 hover:bg-gray-50"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-gray-50"
             >
               Samples
             </Link>
             <Link
+              to="/pricing"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-gray-50"
+            >
+              Pricing
+            </Link>
+            <Link
               to="/login"
-              className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-primary-600 hover:bg-gray-50"
+              className="block px-3 py-2 rounded-md text-base font-medium text-gray-900 hover:text-indigo-600 hover:bg-gray-50"
             >
               Login
             </Link>
             <Link
               to="/signup"
-              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-primary-600 hover:bg-primary-700"
+              className="block px-3 py-2 rounded-md text-base font-medium text-white bg-indigo-600 hover:bg-indigo-700"
             >
               Get Started
             </Link>
